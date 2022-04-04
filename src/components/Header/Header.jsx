@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 
 const Header = () => (
     <h1 className={styles.heading}>
-        <span className={styles.light}>Servicio</span> Metereológico
+        <span className={styles.light}>Weather</span> App
         <br />
         
     </h1>

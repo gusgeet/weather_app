@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 
 import getCurrentDayForecast from '../helpers/getCurrentDayForecast';
@@ -27,6 +27,7 @@ const useForecast = () => {
             return;
         }
         return data[0];
+        
 
     }
 
@@ -38,7 +39,6 @@ const useForecast = () => {
             return;
         }
 
-        
         return data;
     }
 
@@ -50,7 +50,7 @@ const useForecast = () => {
         setForecast({ currentDay, currentDayDetails, upcomingDays })
         setLoading(false)
     }
-
+    
     const submitRequest = async location => {
         setLoading(true)
         setError(false)

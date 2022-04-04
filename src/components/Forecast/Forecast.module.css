@@ -12,3 +12,8 @@
     max-width: 675px;
     min-height: 300px;
 }
+
+a {
+    text-decoration: none;
+
+}

@@ -7,7 +7,10 @@ import PropTypes from 'prop-types';
 
 const CurrentDay = ({weekday, date, location, temperature, weatherIcon, weatherDescription}) => (
     <div className="d-flex">
-        <div className={styles.img}></div>
+        <div className={
+            weatherDescription.includes('Clear') ? styles.img : weatherDescription.includes('Cloud') ? styles.img2 : styles.img3
+            
+        }></div>
         <div className={styles.gradient}></div>
         <div className={`${styles.cardInner} d-flex flex-column justify-content-between pt-3 pb-2 pl-2`}>
             <div>

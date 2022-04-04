@@ -24,7 +24,7 @@ const Forecast = ({forecast}) => (
             
         </Row>
         <Col xs={4} md={12} className='d-flex'>
-            <h6>Regresar</h6>
+            <a href="/" role="button" className='back-btn'>Back</a>
         </Col>
         
     </Container>

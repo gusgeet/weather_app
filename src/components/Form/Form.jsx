@@ -22,14 +22,14 @@ const Form = ({submitSearch}) => {
                 aria-label="location"
                 type="text"
                 className={`${styles.input} form-control`}
-                placeholder="Buscar una locación"
+                placeholder="Type a location"
                 required
                 value={location}
                 onChange={e =>setLocation(e.target.value)}
             />
 
             <button type="submit" className={styles.button} onClick={onSubmit}>
-                BUSCAR
+                SEARCH
             </button>
         </form>
     );
